@@ -6,7 +6,7 @@ import { FaFacebook, FaInstagram, FaPinterest, FaTwitter } from "react-icons/fa"
 const Footer = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto py-16">
+      <div className="container m-auto pt-16 pb-4">
         <div className="grid grid-cols-5 gap-4 ">
           <div className="col-span-2">
             <Logo />
@@ -42,6 +42,7 @@ const Footer = () => {
             <Socials />
           </>
         </div>
+        <p className="text-center text-gray-600">Copyright &copy; 2024 Nar3sh</p>
       </div>
     </div>
   );

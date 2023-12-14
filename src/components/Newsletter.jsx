@@ -11,7 +11,7 @@ const Newsletter = () => {
       <div className="container m-auto pt-16">
         <div className="border border-black bg-[#1fafa4] grid grid-cols-4 gap-2 h-72 rounded-2xl">
           <div className="flex  justify-center items-end">
-            <img src={image1} alt="newsletter image" className="h-64" />
+            <img src={image1} alt="newsletter image" className="h-72" />
           </div>
           <div className="col-span-2 flex flex-col justify-evenly py-4 items-center">
             <h2 className="playfair text-4xl text-center  pb-4">
