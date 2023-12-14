@@ -1,4 +1,5 @@
 import React from "react";
+import { FaCirclePlay } from "react-icons/fa6";
 
 const Data = [
   {
@@ -27,7 +28,7 @@ const Data = [
   },
   {
     image:
-      "https://media.licdn.com/dms/image/D4D12AQE415Dp4lVxjQ/article-cover_image-shrink_720_1280/0/1689326582431?e=2147483647&v=beta&t=OipBgTfZCXzhymLU1s5lOlVGAUpxH-B-8RTlzreW7xU",
+      "https://images.squarespace-cdn.com/content/v1/6146224245cef54e6a945f5c/c9d8e3bf-778e-467e-8d7c-14e734e28f8f/Self-Improvement-Tips-To-Change-Life+edit.jpg",
     title: "Self-improvement",
     length: "13 episodes = 160 minutes",
   },
@@ -53,7 +54,7 @@ const Data = [
 const Categories = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto flex flex-col gal-4 justify-center items-center py-16">
+      <div className="container m-auto flex flex-col gap-4 justify-center items-center py-16">
         <p className="playfair text-4xl text-center w-3/5">
           Select and learn about your preferred
           <span className="text-[#936ce0]"> categories</span> of podcast
@@ -64,9 +65,44 @@ const Categories = () => {
           technology, science, or personal growth, we have something for
           everyone.
         </p>
+        <div className="pt-8">
+          <CategoryTile />
+        </div>
       </div>
     </div>
   );
 };
 
+function CategoryTile() {
+  return (
+    <div className="grid grid-cols-4 gap-6 justify-center items-center">
+      {Data.map((info) => (
+        <div
+          className="grid grid-cols-3 gap-4 bg-white shadow-xl p-2 rounded-xl h-28 justify-center items-center hover:bg-gray-200 transition-all ease-linear cursor-pointer"
+          key={info.title}
+        >
+          <img
+            src={info.image}
+            alt="image"
+            className="w-full h-24 rounded-lg drop-shadow-md"
+          />
+          <div className="col-span-2  gap-y-2">
+            <h2 className="playfair">{info.title}</h2>
+            <span className="text-sm text-gray-700">{info.length}</span>
+            <PlayButton />
+          </div>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function PlayButton() {
+  return (
+    <div className="flex items-center gap-2">
+      <FaCirclePlay size={24} className="text-[#936ce0]" />
+      <h2 className=" text-sm font-bold text-gray-800">Play Now</h2>
+    </div>
+  );
+}
 export default Categories;
