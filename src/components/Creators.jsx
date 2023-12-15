@@ -6,19 +6,19 @@ import image3 from "../assets/creator-green-person.png";
 const Creators = () => {
   return (
     <div className="bg-[#fef2fe]  ">
-      <div className="container m-auto py-16 flex flex-col gap-y-4 justify-center items-center px-2 lg:px-0">
-        <p className="playfair text-4xl text-center md:w-3/5">
+      <div className="container overflow-hidden m-auto py-16 flex flex-col gap-y-4 justify-center items-center px-2 lg:px-0">
+        <p data-aos="fade-down" className="playfair text-4xl text-center md:w-3/5">
           <span className="text-[#936ce0]"> Learn</span> from the creators
           themselves!
         </p>
-        <p className="py-2 text-gray-700 md:w-3/5 text-center">
+        <p data-aos="fade-down" className="py-2 text-gray-700 md:w-3/5 text-center">
           Are you ready to share your voice with the world? Our platform is the
           perfect place for podcast creators to reach a vast and engaged
           audience. So don't wait any longer, sign up now and start creating
           your next hit podcast!
         </p>
         <a
-          href="#"
+          href="#" data-aos="flip-left"
           className="bg-[#936cdf]  text-gray-100 rounded-lg px-4 py-2 hover:drop-shadow-xl transition-all ease-in-out duration-150 hover:bg-purple-500"
         >
           Click here
@@ -28,7 +28,7 @@ const Creators = () => {
             image={image1}
             title={`Get to know about user research`}
             subtitle={`Learn from the best who will make you forget the rest!`}
-            back={`7C98B3`}
+            back={`f56823`}
           />
 
           <Tile
@@ -52,6 +52,7 @@ const Creators = () => {
 function Tile({ back, image, title, subtitle }) {
   return (
     <div
+    data-aos="zoom-in"
       className={`border border-black bg-[#${back}] grid grid-cols-3 gap-2 items-center rounded-lg px-2 h-64 overflow-hidden`}
     >
       <div className="flex items-end">

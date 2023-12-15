@@ -5,12 +5,13 @@ import image3 from "../assets/88.png";
 import image4 from "../assets/play.jpg";
 import { FaCirclePlay } from "react-icons/fa6";
 
+
 const Hero = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto h-screen px-2 lg:px-0">
-        <div className="grid md:grid-cols-2 justify-center">
-          <div className="flex flex-col justify-center gap-y-6">
+      <div className="container m-auto h-screen  px-2 lg:px-0">
+        <div className=" overflow-hidden grid md:grid-cols-2 justify-center">
+          <div data-aos="fade-right" className="flex flex-col justify-center gap-y-6">
             <h2 className="playfair text-xl text-[#936ce0]">
               New Sessions Available
             </h2>
@@ -46,7 +47,7 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="relative flex md:h-screen hidden md:flex ">
+          <div data-aos="zoom-in" className="relative  md:h-screen hidden md:flex ">
             <img
               src={image1}
               alt="image"

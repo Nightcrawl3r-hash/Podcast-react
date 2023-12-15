@@ -8,6 +8,7 @@ import WhatmakesUsUnique from "./WhatmakesUsUnique";
 import Creators from "./Creators";
 import Hero from "./Hero";
 
+
 const Home = () => {
   return (
     <div>

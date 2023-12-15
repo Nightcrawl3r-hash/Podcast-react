@@ -10,8 +10,8 @@ const WhatmakesUsUnique = () => {
   return (
     <div className="bg-[#fef7ef]">
       <div className="container m-auto py-16 px-2 lg:px-0">
-        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
-          <div className="flex flex-col gap-y-4">
+        <div className=" overflow-hidden grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+          <div data-aos="fade-right" className="flex flex-col gap-y-4">
             <p className="playfair text-4xl lg:text-center ">
               What makes us
               <span className="text-[#936ce0]"> unique</span> from others?

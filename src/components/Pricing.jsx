@@ -5,12 +5,12 @@ const Pricing = () => {
   return (
     <div className="bg-[#fef7ef]">
       <div className="container m-auto py-16 px-2 lg:px-0">
-        <section className="flex flex-col gap-4 justify-center items-center">
-          <p className="playfair text-4xl text-center md:w-3/5">
+        <section className="flex overflow-hidden flex-col gap-4 justify-center items-center">
+          <p data-aos="fade-down" className="playfair text-4xl text-center md:w-3/5">
             Share your views towards your favorite topic at
             <span className="text-[#936ce0]"> affordable prices</span>
           </p>
-          <div className="grid md:grid-cols-2 gap-6 py-4 lg:w-2/5 md:px-20 lg:px-0">
+          <div className= " overflow-hidden grid md:grid-cols-2 gap-6 py-4 lg:w-2/5 md:px-20 lg:px-0">
             <Basic />
             <Premium />
           </div>
@@ -22,7 +22,7 @@ const Pricing = () => {
 
 function Basic() {
   return (
-    <div className=" border border-black bg-[#936ce0] p-4 rounded-xl text-gray-100 flex flex-col items-center gap-4">
+    <div data-aos="flip-up" className=" border border-black bg-[#936ce0] p-4 rounded-xl text-gray-100 flex flex-col items-center gap-4">
       <h2 className="text-3xl playfair text-center">Basic</h2>
       <h1 className="text-center text-4xl font-bold py-2">$30</h1>
       <section className="flex flex-col gap-1">
@@ -40,7 +40,7 @@ function Basic() {
 
 function Premium() {
   return (
-    <div className=" border border-black p-4 rounded-xl flex flex-col items-center gap-4 ">
+    <div data-aos="flip-up" className=" border border-black p-4 rounded-xl flex flex-col items-center gap-4 ">
       <h2 className="text-3xl playfair text-center">Premium</h2>
       <h1 className="text-center text-4xl font-bold py-2">$60</h1>
       <section className="flex flex-col gap-1">
