@@ -8,19 +8,19 @@ import { MdWorkspacePremium } from "react-icons/md";
 const Features = () => {
   return (
     <div className="bg-white relative">
-      <img src={image1} alt="mic-image" className="absolute h-64" />
+      <img src={image1} alt="mic-image" className=" hidden md:flex absolute h-64 w-1/5" />
       <div className="container m-auto flex flex-col gap-4 justify-center items-center py-16">
-        <p className="playfair text-4xl text-center w-3/5">
+        <p className="playfair text-4xl text-center md:w-3/5 ">
           We make your
           <span className="text-[#936ce0]"> podcasting</span> easy!
         </p>
-        <p className="py-2 text-gray-700 w-3/5 text-center">
+        <p className="py-2 text-gray-700 md:w-3/5 text-center">
           Discover the ultimate podcasting experience with us. Say goodbye to
           cluttered interfaces and endless searching for your next favorite
           show. With us, you can easily find, subscribe, and listen to thousands
           of podcasts all in one place.
         </p>
-        <div className="grid grid-cols-4 gap-6 justify-center items-center">
+        <div className="grid lg:grid-cols-4 gap-6 justify-center items-center">
           <FeaturedTile
             bg={`d1f6f3`}
             color={`1bd0c3`}
@@ -66,7 +66,7 @@ function FeaturedTile({ comp, title, subtitle, bg, color }) {
         {comp}
       </span>
       <p className="playfair text-xl">{title}</p>
-      <h3 className="text-gray-700">{subtitle}</h3>
+      <h3 className="text-gray-700 md:w-3/5 lg:w-full">{subtitle}</h3>
     </div>
   );
 }

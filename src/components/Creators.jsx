@@ -6,12 +6,12 @@ import image3 from "../assets/creator-green-person.png";
 const Creators = () => {
   return (
     <div className="bg-[#fef2fe]  ">
-      <div className="container m-auto py-16 flex flex-col gap-y-4 justify-center items-center">
-        <p className="playfair text-4xl text-center w-3/5">
+      <div className="container m-auto py-16 flex flex-col gap-y-4 justify-center items-center px-2 lg:px-0">
+        <p className="playfair text-4xl text-center md:w-3/5">
           <span className="text-[#936ce0]"> Learn</span> from the creators
           themselves!
         </p>
-        <p className="py-2 text-gray-700 w-3/5 text-center">
+        <p className="py-2 text-gray-700 md:w-3/5 text-center">
           Are you ready to share your voice with the world? Our platform is the
           perfect place for podcast creators to reach a vast and engaged
           audience. So don't wait any longer, sign up now and start creating
@@ -23,7 +23,7 @@ const Creators = () => {
         >
           Click here
         </a>
-        <div className="grid grid-cols-3 gap-8 ">
+        <div className="grid md:grid-cols-3 gap-4 lg:gap-8 ">
           <Tile
             image={image1}
             title={`Get to know about user research`}
@@ -55,10 +55,10 @@ function Tile({ back, image, title, subtitle }) {
       className={`border border-black bg-[#${back}] grid grid-cols-3 gap-2 items-center rounded-lg px-2 h-64 overflow-hidden`}
     >
       <div className="flex items-end">
-        <img src={image} alt="image" className="h-64" />
+        <img src={image} alt="image" className=" h-64" />
       </div>
-      <section className="col-span-2 flex flex-col gap-4">
-        <pDB7C26 className="playfair text-xl">{title}</pDB7C26>
+      <section className="col-span-2 flex flex-col gap-2 lg:gap-4">
+        <p className="playfair text-xl">{title}</p>
         <span className="">{subtitle}</span>
         <a
           href="#"

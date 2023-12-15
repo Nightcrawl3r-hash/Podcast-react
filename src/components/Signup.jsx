@@ -7,10 +7,10 @@ import { Link } from "react-router-dom";
 const Signup = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto pt-16">
-        <div className="border border-black bg-[#e0a12c] grid grid-cols-2 gap-2 h-72 rounded-2xl relative">
-          <div className="p-8">
-            <h2 className="playfair text-5xl pb-2">
+      <div className="container m-auto pt-16 px-2 lg:px-0">
+        <div className="border border-black bg-[#e0a12c] grid md:grid-cols-2 gap-2 h-72 rounded-2xl relative">
+          <div className=" p-2 lg:p-8">
+            <h2 className="playfair text-3xl lg:text-5xl pb-2">
               Are you excited to get started on the journey of becoming a new
               podcaster?
             </h2>
@@ -19,7 +19,7 @@ const Signup = () => {
             </p>
             <Sign />
           </div>
-          <div className="absolute  bottom-0 right-40">
+          <div className=" hidden md:flex absolute  bottom-0  right-0 lg:right-40">
             <img src={image1} alt="image" />
           </div>
         </div>

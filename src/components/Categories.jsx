@@ -54,12 +54,12 @@ const Data = [
 const Categories = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto flex flex-col gap-4 justify-center items-center py-16">
-        <p className="playfair text-4xl text-center w-3/5">
+      <div className="container m-auto flex flex-col gap-4 justify-center items-center py-16 px-2 lg:px-0">
+        <p className="playfair text-4xl text-center md:w-3/5">
           Select and learn about your preferred
           <span className="text-[#936ce0]"> categories</span> of podcast
         </p>
-        <p className="py-2 text-gray-700 w-3/5 text-center">
+        <p className="py-2 text-gray-700 md:w-3/5 text-center">
           Join us as we delve into the latest news, trends, and insights on the
           topics that matter most to you. Whether you're interested in
           technology, science, or personal growth, we have something for
@@ -75,7 +75,7 @@ const Categories = () => {
 
 function CategoryTile() {
   return (
-    <div className="grid grid-cols-4 gap-6 justify-center items-center">
+    <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 justify-center items-center">
       {Data.map((info) => (
         <div
           className="grid grid-cols-3 gap-4 bg-white shadow-xl p-2 rounded-xl h-28 justify-center items-center hover:bg-gray-200 transition-all ease-linear cursor-pointer"

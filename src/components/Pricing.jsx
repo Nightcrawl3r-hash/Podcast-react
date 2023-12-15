@@ -4,13 +4,13 @@ import { TiTickOutline } from "react-icons/ti";
 const Pricing = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto py-16">
+      <div className="container m-auto py-16 px-2 lg:px-0">
         <section className="flex flex-col gap-4 justify-center items-center">
-          <p className="playfair text-4xl text-center w-3/5">
+          <p className="playfair text-4xl text-center md:w-3/5">
             Share your views towards your favorite topic at
             <span className="text-[#936ce0]"> affordable prices</span>
           </p>
-          <div className="grid grid-cols-2 gap-6 py-4 w-2/5">
+          <div className="grid md:grid-cols-2 gap-6 py-4 lg:w-2/5 md:px-20 lg:px-0">
             <Basic />
             <Premium />
           </div>

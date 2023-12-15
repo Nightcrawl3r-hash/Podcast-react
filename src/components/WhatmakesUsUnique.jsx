@@ -9,10 +9,10 @@ import image4 from "../assets/media.jpg";
 const WhatmakesUsUnique = () => {
   return (
     <div className="bg-[#fef7ef]">
-      <div className="container m-auto py-16">
-        <div className="grid grid-cols-3 gap-6 ">
+      <div className="container m-auto py-16 px-2 lg:px-0">
+        <div className="grid  md:grid-cols-2 lg:grid-cols-3 gap-6 ">
           <div className="flex flex-col gap-y-4">
-            <p className="playfair text-4xl text-center ">
+            <p className="playfair text-4xl lg:text-center ">
               What makes us
               <span className="text-[#936ce0]"> unique</span> from others?
             </p>
@@ -28,13 +28,13 @@ const WhatmakesUsUnique = () => {
             <KnowMore />
           </div>
 
-          <div className="relative flex  justify-center col-span-2">
+          <div className="relative flex  justify-center lg:col-span-2 order-first md:order-last">
             <img src={image1} alt="image" className="z-30 " />
             <img src={image2} alt="wave" className="absolute top-0" />
             <img
               src={image3}
               alt=""
-              className="z-40 rounded-lg h-36 absolute right-64 bottom-20"
+              className="hidden lg:flex z-40 rounded-lg h-36 absolute right-64 bottom-20"
             />
             <img
               src={image4}
